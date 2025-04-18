@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MailMate AI</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../assets/mailmate-logo.png" alt="MailMate AI">
+    </div>
+
+    <!-- Đăng nhập OAuth -->
+    <h2>🔑 Kết nối Gmail</h2>
+    <p class="subtext">Cấp quyền để MailMate AI tóm tắt email của bạn.</p>
+    <button id="login" class="btn-primary">🔗 Kết nối Gmail</button>
+
+    <hr>
+
+    <!-- Danh sách 5 Email -->
+    <h2>📧 Danh sách Tóm tắt 5 Email Mới Nhất</h2>
+    <table id="emailSummary">
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Sender</th>
+          <th>Date-Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Danh sách email sẽ được hiển thị ở đây -->
+      </tbody>
+    </table>
+    <button id="get5Emails" class="btn-primary-get">📨 Tóm tắt 5 Email</button>
+
+    <!-- Tóm tắt email -->
+    <h2>📧 Tóm tắt email</h2>
+    <p class="subtext">Nhanh chóng nắm bắt nội dung chính của email dài.</p>
+    <button id="summarize" class="btn-secondary">Tóm tắt tất cả mail</button>
+    <div class="summary-box">
+      <h3>Tóm tắt:</h3>
+      <p id="summary">Chưa có nội dung.</p>
+    </div>
+  </div>
+  <script src="scripts/popup.js"></script>
+</body>
+</html>

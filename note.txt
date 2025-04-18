@@ -1,0 +1,25 @@
+1️⃣ Cấu trúc thư mục Chrome Extension
+📂 mailmate-extension/ (Frontend cho Chrome Extension)
+
+📦 mailmate-extension
+ ┣ 📂 assets                 (Chứa hình ảnh, logo)
+ ┣ 📂 fonts                 
+ ┣ 📂 icons                
+ ┣ 📂 src
+ ┃ ┣ 📂 styles               (Chứa file CSS)
+ ┃ ┣ 📂 scripts              (Chứa file JavaScript xử lý API)
+ ┃ ┣ 📄 popup.html           (Giao diện Popup của Extension)
+ ┃ ┣ 📄 popup.js             (Logic xử lý popup)
+ ┃ ┣ 📄 background.js        (Chạy nền để duy trì phiên)
+ ┃ ┣ 📄 content.js           (Tương tác với trang web)
+ ┣ 📄 manifest.json          (Khai báo Extension)
+ ┣ 📄 package.json           (Khai báo dependencies)
+
+ Tại manifest.json
+ Mục "host_permissions": ["https://mail.google.com/*"] trong manifest.json của Chrome Extension 
+ có nghĩa là:
+🔹 Extension được phép truy cập vào tất cả các trang thuộc https://mail.google.com/, tức là toàn bộ Gmail.
+🔹 Có thể đọc, chỉnh sửa nội dung trang Gmail hoặc chặn request nếu cần thiết.
+
+Link FE Gpt : https://chatgpt.com/c/67d10693-2e14-800d-ac47-8e80de878c78
+Link import SRS vào Chrome Extension : chrome://extensions/

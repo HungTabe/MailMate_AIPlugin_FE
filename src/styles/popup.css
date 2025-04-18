@@ -1,0 +1,147 @@
+/* 🏆 Font chữ Apple */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SF-Pro-Display-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SF-Pro-Display-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    width: 380px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
+    text-align: center;
+    border-radius: 20px;
+    height: 86vh;
+    width: 93vw;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;  /* Đảm bảo container chiếm hết chiều cao của popup */
+    overflow-y: auto;  /* Cho phép cuộn nếu nội dung vượt quá */
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtext {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: #007aff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #005ecb;
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 12px;
+    background: #34c759;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-primary-get {
+    width: 100%;
+    padding: 12px;
+    background: #f1995d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.btn-primary-get:hover {
+    background: #dda57f;
+}
+
+
+.btn-secondary:hover {
+    background: #28a745;
+}
+
+.summary-box {
+    background: #f8f8f8;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.summary-box h3 {
+    font-size: 16px;
+    color: #007aff;
+    margin-bottom: 5px;
+}
+
+.summary-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Thêm style cho bảng email */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
